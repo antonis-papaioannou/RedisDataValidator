@@ -21,7 +21,9 @@ This is a Java project that has the following dependencies
 
 The project can be build using the maven project management tool which will automatically download and install all the necessary library dependencies with the following command.
 
+```console
 mvn clean package
+```
 
 This build process will compile and pack the application in a jar file located in the target directory
 
@@ -29,15 +31,17 @@ This build process will compile and pack the application in a jar file located i
 You can use the tool using the produced jar file from the build process.
 From the root directory execute:
 
+```console
 java -jar ./target/data_validator-0.1.jar <parameters>
+```
 
 There are some required and optional parameters. The following table summarizes the command line parameters.
 
 | Short name	| Long name	| Expected Value	| Required	| Default Value| Description |
-|   :----:		|    :----:	|	  :----:		| :----:	|    :----:	   |			 |
-|	-d			| --datafile|		String		|	Yes		|	  ---	   | The input data file|
-|	-h			| --host	|	String			|	No		| 127.0.0.1	   | The target Redis Cluster node IP address |
-|	-p			| --port	|	int				|	No		|	6379	   | The target Redis Cluster node port number|
+| :----:	| :----	| :----: | :----:	| :----: |	:---: |
+|	-d | --datafile| String	|	Yes	| ---	| The input data file|
+|	-h | --host	|	String | No | 127.0.0.1 | The target Redis Cluster node IP address |
+|	-p | --port	|	int |	No | 6379	| The target Redis Cluster node port number|
 
 An example of the execution command line
 
