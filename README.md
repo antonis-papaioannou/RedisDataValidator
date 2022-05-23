@@ -27,7 +27,7 @@ mvn clean package
 
 This build process will compile and pack the application in a jar file located in the target directory
 
-### Execution
+## Execution
 You can use the tool using the produced jar file from the build process.
 From the root directory execute:
 
